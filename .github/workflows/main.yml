@@ -27,9 +27,10 @@ jobs:
 
       - name: Deploy to gh-pages
         env:
-          SRC_FOLDER_PATH: "build"
+          SRC_FOLDER_PATH: "./build"
           TARGET_BRANCH: "gh-pages"
         run: |
+          ls
           files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
