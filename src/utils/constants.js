@@ -1,0 +1,8 @@
+const CONSTANTS = {
+  ZULU_TIMESTAMP_FORMAT: "YYYY-MM-DDTHH:mm:ss.SSS[Z]",
+  DEFAULT_TIMESTAMP: "LLL",
+  JWT_ACCESSTOKEN_NAME: "accessToken",
+  JWT_REFRESHTOKEN_NAME: "refreshToken",
+};
+
+export default CONSTANTS;

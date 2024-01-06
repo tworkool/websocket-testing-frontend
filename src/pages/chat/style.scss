@@ -1,0 +1,116 @@
+$gray1: #a1a1a1;
+$gray2: #525252;
+
+$bg-color: rgb(31, 31, 31);
+
+.wst-chat {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: 60px;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    box-shadow: rgb(0 0 0 / 34%) 1px 0 18px 1px;
+    z-index: 10;
+
+    & input {
+      width: clamp(150px, 30%, 300px);
+      background-color: rgb(44, 44, 44);
+      border: none;
+      border-radius: 8px;
+      height: 40px;
+      padding: 0 1rem;
+      font-size: 0.8rem;
+      color: $gray1;
+    }
+  }
+
+  &__actions {
+    height: 100px;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    box-shadow: rgb(0 0 0 / 34%) 1px 0 18px 1px;
+    z-index: 10;
+
+    & input {
+      flex: 1;
+      background-color: rgb(58, 58, 58);
+      border: 1px solid $gray2;
+      border-radius: 25px;
+      height: 50px;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      color: $gray1;
+    }
+
+    & button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      color: $gray1;
+    }
+  }
+
+  &__content {
+    background: url("https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
+    overflow-y: auto;
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  &__message {
+    padding: 0.5rem 0.8rem;
+    background-color: white;
+    float: left;
+    border: 1px solid rgb(199, 199, 199);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: clamp(350px, 80%, 700px);
+    border-radius: 10px;
+
+    &__header {
+      font-size: 0.8rem;
+      color: rgb(65, 65, 65);
+      margin-bottom: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__body {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 0.8rem;
+    }
+
+    &--other {
+      background-color: white;
+      float: left;
+    }
+
+    &--me {
+      //float: right;
+      margin-left: auto;
+      background-color: #e4ffcc;
+    }
+  }
+}
