@@ -23,10 +23,12 @@
     "start": "react-scripts start",
     "start2": "set PORT=3001 && react-scripts start",
     "build": "CI=false && react-scripts build",
+    "local-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",
